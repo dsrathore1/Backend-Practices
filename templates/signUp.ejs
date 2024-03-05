@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #000; height: 100vh;">
+  <h1 style="color: #fff; text-transform: uppercase; text-align: center;">🎗️Welcome to Sign Up🎗️</h1>
+
+  <form style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;"
+    action="/user/signUp" method="POST">
+    <div style="display: grid; gap: 10px; margin-top: 3rem;">
+      <label style="font-size: 16px; font-weight: bold; color: #fff;">Username</label>
+      <input name="username" type="text" placeholder="Enter your username"
+        style="padding:10px; width: 100%; font-size: 16px;" />
+    </div>
+    <div style="display: grid; gap: 10px; ">
+      <label style="font-size: 16px; font-weight: bold; color: #fff;">Email</label>
+      <input name="emailID" type="email" placeholder="Enter your email"
+        style="padding:10px; width: 100%; font-size: 16px;" />
+    </div>
+    <div style="display: grid; gap: 10px; ">
+      <label style="font-size: 16px; font-weight: bold; color: #fff;">Password</label>
+      <input name="pwd" type="password" placeholder="Enter your password"
+        style="padding:10px; width: 100%; font-size: 16px;" />
+    </div>
+
+    <button type="submit"
+      style="background-color: #51b66c; margin-top: 2rem; padding: 6px 25px; height: 3rem; width: 20%; border-radius: 3px; font-size: 18px; border: none; color: #fff;">Submit</button>
+
+    <p style="color: #fff;">Already have an account? <a href="/user/login"
+        style="text-decoration: none; color: #5454ff; font-size: 18px;">Login</a></p>
+  </form>
+</body>
+
+</html>
